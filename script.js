@@ -85,6 +85,18 @@ const Copos = [
 
   ];
 
+  const donuts_S=[
+    { id:"Nenhum", nome:"Nenhum", preco: 0 },
+    { id:"donut_americano", nome:"Americano", preco: 28.00},
+    { id:"donut_dog", nome:"Cat Hot", preco: 22.00},
+    { id:"donut_dog2", nome:"Cat Hot duplo", preco: 26.00},
+    { id:"donut_burguer", nome:"Cat burguer", preco: 28.00},
+    { id:"donut_frances", nome:"Francês", preco: 29.00},
+    { id:"donut_margherita", nome:"Margherita", preco: 26.00 },
+    { id:"donut_tropical", nome:"Tropical Chicken", preco: 27.00 }
+
+  ]
+
 
 
 function preencherOpcoes(){
@@ -211,7 +223,7 @@ function gerarRelatorio(){
   const acucarId = document.getElementById("acucar").value;
   const caldasId = document.getElementById("caldas").value;
   const leitesId = document.getElementById("leites").value;
-  const forma_pagamentoId = document.getElementById("forma_pagamento").value;
+  const forma_pagamentoId = radioVal("forma_pagamento");
   const quantidade = document.getElementById("quantidade").value;
 
 
