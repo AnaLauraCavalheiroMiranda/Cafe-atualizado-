@@ -247,6 +247,7 @@ function gerarRelatorio(){
   const caldasId = document.getElementById("caldas").value;
   const leitesId = document.getElementById("leites").value;
   const forma_pagamentoId = document.getElementById("forma_pagamento").value;
+  const observacoesId = document.getElementById("observacoes").value;
   const quantidade = document.getElementById("quantidade").value;
   const donuts_S_Id = document.getElementById("donuts_S").value;
   const donuts_D_Id = document.getElementById("donuts_D").value;
@@ -291,6 +292,7 @@ function gerarRelatorio(){
   <p><strong>Caldas:</strong> ${caldas1.nome} - R$ ${custocaldas.toFixed(2)}</p>
   <p><strong>Leite:</strong> ${leites1.nome} - R$ ${custoleites.toFixed(2)}</p>
   <p><strong>Comida:</strong> ${donuts_S1.nome} - R$ ${custodonuts_S.toFixed(2)} ${donuts_D1.nome} - R$ ${custodonuts_D.toFixed(2)}</p>
+  <p><strong>Observações:</strong> ${observacoesId}<p>
   <p><strong>Forma de pagamento:</strong> ${forma_pagamentoId}<p>
   <p><strong>Total:</strong> ${total.toFixed(2)}<p>
 `;
