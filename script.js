@@ -36,7 +36,7 @@ const temperatura = [
 const Copos = [
   { id:"Nenhum", nome:"Nenhum", preco: 0 },
   { id:"copo_50ml", nome: "Copo 50 ml", preco: 1.99 },
-  {id:"copo_100ml", nome: "Copo 100ml ", preco: 2.50 },
+  { id:"copo_100ml", nome: "Copo 100ml ", preco: 2.50 },
   { id:"copo_200ml", nome: "Copo 200ml", preco: 3.50 },
   { id:"copo_300ml", nome: "Copo 300ml", preco: 4.25  },
   { id:"copo_440", nome: "Copo 440ml", preco: 4.50 },
@@ -87,28 +87,28 @@ const Copos = [
 
   const donuts_S=[
     { id:"Nenhum", nome:"Nenhum", preco: 0 },
-    { id:"donut_americano", nome:"Americano", preco: 28.00},
-    { id:"donut_dog", nome:"Cat Hot", preco: 22.00},
-    { id:"donut_dog2", nome:"Cat Hot duplo", preco: 26.00},
-    { id:"donut_burguer", nome:"Cat burguer", preco: 28.00},
-    { id:"donut_frances", nome:"Francês", preco: 29.00},
-    { id:"donut_margherita", nome:"Margherita", preco: 26.00 },
-    { id:"donut_tropical", nome:"Tropical Chicken", preco: 27.00 }
+    { id:"donut_americano", nome:"Donut Americano", preco: 28.00},
+    { id:"donut_dog", nome:"Donut Cat Hot", preco: 22.00},
+    { id:"donut_dog2", nome:"Donut Cat Hot duplo", preco: 26.00},
+    { id:"donut_burguer", nome:"Donut Cat burguer", preco: 28.00},
+    { id:"donut_frances", nome:"Donut Francês", preco: 29.00},
+    { id:"donut_margherita", nome:"Donut Margherita", preco: 26.00 },
+    { id:"donut_tropical", nome:"Donut Tropical Chicken", preco: 27.00 }
 
   ];
 
   const donuts_D=[
     {id:"nenhum", nome:"nenhum", preco:0},
-    {id:"donut_homer", nome:"homer simpsons", preco: 18.00},
-    {id:"donut_snickers", nome:"snickers", preco: 20.00},
-    {id:"donut_creme_de_avela", nome:"creme de avelã", preco:25.00},
-    {id:"donut_cheesecake", nome:"cheesecake de frutas vermelhas", preco:25.00},
-    {id:"donut_kinder", nome:"kinder bueno", preco: 28.00},
-    {id:"donut_redvelvet", nome:"red velvet", preco:20.00},
-    {id:"donut_rafaello", nome:"rafaello", preco:25.00},
-    {id:"donut_tonn", nome:"tonn fraise", preco:25.00},
-    {id:"donut_pistache", nome:"pistache", preco:25.00},
-    {id:"donut_churros", mome:"Churros", preco:25.00}
+    {id:"donut_homer", nome:"Donut Homer Simpsons", preco: 18.00},
+    {id:"donut_snickers", nome:"Donut Snickers", preco: 20.00},
+    {id:"donut_creme_de_avela", nome:"Donut Creme de avelã", preco:25.00},
+    {id:"donut_cheesecake", nome:"Donut Cheesecake de frutas vermelhas", preco:25.00},
+    {id:"donut_kinder", nome:"Donut Kinder bueno", preco: 28.00},
+    {id:"donut_redvelvet", nome:"Donut Red velvet", preco:20.00},
+    {id:"donut_rafaello", nome:"Donut Rafaello", preco:25.00},
+    {id:"donut_tonn", nome:"Donut Tonn fraise", preco:25.00},
+    {id:"donut_pistache", nome:"Donut de pistache", preco:25.00},
+    {id:"donut_canela", nome:"Donut Açúcar e canela", preco:15.00}
     
     
   ];
@@ -285,7 +285,6 @@ function gerarRelatorio(){
   <p><strong>Café</strong> ${Cafe1.nome} - R$ ${custoCafe.toFixed(2)}</p>
   <p><strong>Chá:</strong> ${Chas1.nome} - R$ ${custoChas.toFixed(2)}</p>
   <p><strong>Temperatura:</strong> ${temperatura1.nome} - R$ ${custotemperatura.toFixed(2)}</p>
-  <p><strong>Copos:</strong> ${Copos1.nome} - R$ ${custoCopos.toFixed(2)}</p>
   <p><strong>Xicara:</strong> ${Xicaras1.nome} - R$ ${custoXicaras.toFixed(2)}</p>
   <p><strong>Açucar:</strong> ${acucar1.nome} - R$ ${custoacucar.toFixed(2)}</p>
   <p><strong>Chocolate:</strong> ${Chocolate1.nome} - R$ ${custoChocolate.toFixed(2)}</p>
