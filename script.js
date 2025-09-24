@@ -30,7 +30,13 @@ const Chas = [
 const temperatura = [
   { id:"Quente", nome:"Quente", preco: 0 },
   { id:"Morno", nome:"Morno", preco: 0 },
-  { id:"Gelado", nome:"Gelado", preco: 0 },
+  { id:"Gelado", nome:"Gelado", preco: 0 }
+];
+
+const temperatura_cha = [
+  { id:"Quente", nome:"Quente", preco: 0 },
+  { id:"Morno", nome:"Morno", preco: 0 },
+  { id:"Gelado", nome:"Gelado", preco: 0 }
 ];
 
 const Copos = [
@@ -215,6 +221,16 @@ function preencherOpcoes(){
   selectdonuts_D.appendChild(option);
  }
 
+ const selecttemperatura_cha = document.getElementById("temperatura_cha");
+ for (let i = 0; i < temperatura_cha.length; i++){
+  const item = temperatura_cha[i];
+  const option = document.createElement("option");
+  option.value = item.id;
+  option.textContent = item.nome;
+  selecttemperatura_cha.appendChild(option);
+ }
+
+
 }
 
 
@@ -251,6 +267,7 @@ function gerarRelatorio(){
   const quantidade = document.getElementById("quantidade").value;
   const donuts_S_Id = document.getElementById("donuts_S").value;
   const donuts_D_Id = document.getElementById("donuts_D").value;
+  const temperatura_cha_Id = document.getElementById("temperatura_cha").value;
 
 
   var Cafe1 = procurarPorId(Cafe, CafeId);
@@ -264,11 +281,13 @@ function gerarRelatorio(){
   var leites1 = procurarPorId(leites, leitesId);
   var donuts_S1 = procurarPorId (donuts_S, donuts_S_Id);
   var donuts_D1 = procurarPorId (donuts_D, donuts_D_Id);
+  var temperatura_cha_1 = procurarPorId (temperatura_cha, temperatura_cha_Id);
 
 
   const custoCafe = Cafe1.preco * quantidade;
   const custoChas = Chas1.preco * quantidade;
   const custotemperatura = temperatura1.preco * quantidade;
+  const custotemperatura_cha = temperatura_cha_1.preco * quantidade;
   const custoCopos = Copos1.preco * quantidade;
   const custoXicaras = Xicaras1.preco * quantidade;
   const custoChocolate = Chocolate1.preco * quantidade; 
